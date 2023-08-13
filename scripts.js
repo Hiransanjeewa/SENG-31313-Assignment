@@ -61,7 +61,7 @@ function dropDownHandler(buttonID) {
         cardContents.style.display = 'block';
 
 
-        fetch('./cards/aboutMe.html')
+        fetch('./cards/'+buttonID+'.html')
         .then(response => response.text())
         .then(content => {
             var contentContainer = document.getElementById('content-container');
