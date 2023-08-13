@@ -84,5 +84,15 @@
         margin-left: 0;
         padding-top: 0%;
     }
+    .button{
+        height: 45px;
+        width: 43px;
+        float: right;
+        margin-right: 40px;
+    }
+    .card{
+        margin-left: 120px;
+        margin-right: 100px;
+    }
 
 } 

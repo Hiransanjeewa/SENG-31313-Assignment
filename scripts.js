@@ -40,22 +40,11 @@ function dropDownHandler(buttonID) {
 
 // scrolling functions
 function scrollDown(scrollButton) {
-    var buttons = document.querySelectorAll('.header-button');
-
-    // closing other opened collapses
-    function setClicked(clickedButton) {
-        buttons.forEach(function(button) {
-            if (button === clickedButton) {
-                button.classList.add('clicked');
-            } else {
-                button.classList.remove('clicked');
-            }
-        });
 
 
     document.getElementById(scrollButton+'_section').scrollIntoView();
     // Clicking the collapse button along with the scrolling .
     document.getElementById(scrollButton).click();
 
-}
+
 }
