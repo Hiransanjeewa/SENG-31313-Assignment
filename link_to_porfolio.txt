@@ -1,0 +1,8 @@
+
+assignment portfolio link
+https://hiransanjeewa.github.io/SENG-31313-Assignment/
+
+
+
+my MERN portfolio hosted in AWS , with Github actions and docker
+https://www.hiransanjeewa.live
