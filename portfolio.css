@@ -60,7 +60,7 @@ body {
 }
 .content{
     width: auto;
-    background-color: aqua;
+   
 }
 
 @media screen and (max-width: 768px) {
