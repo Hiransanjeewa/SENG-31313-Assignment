@@ -81,7 +81,7 @@ function dropDownHandler(buttonID) {
 function scrolDown(scrollButton) {
             
     document.getElementById(scrollButton).addEventListener('click', function() {
-        var targetSection = document.getElementById('targetSection');
+        var targetSection = document.getElementById(scrollButton+'_section');
         var pageHeight = document.body.scrollHeight;
         var targetPercentage = 0.35;
 

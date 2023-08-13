@@ -4,6 +4,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         /* Your existing styles */
+        a{
+            color: bisque;
+            text-decoration: none;
+        }
+        .sections{
+            background-color: white;
+            width: 0;
+            height: 0;
+        }
+
     </style>
     <link rel="stylesheet" href="portfolio.css"> 
 
@@ -36,27 +46,31 @@
             <span class="description">
                 Devops and Cloud Enthusiast
             </sapn>
+            <br>
+            <a href="https://www.hiransanjeewa.live">portfolio</a>
          </div>
     
 
     </div>
 
     <div class="cardsdiv">
-        <section id="AboutMe_section">
+        
+        <section class="sections" id="AboutMe_section"></section>
         <div class="card">
-            &nbsp; &nbsp; About Me 
+            &nbsp; &nbsp; About Me
             <button class="button" id="aboutMe" onclick="dropDownHandler('aboutMe')" >
                 <i class="fa fa-plus"></i>
             </button>
+            
             <hr>
             <span class="content" id="aboutMe-Contents"> 
            
         </span>
         </div>
-        </section>
-        </div>
+       
+  
 
-        <section id="Education_section">
+        <section class="sections" id="Education_section"></section>
         <div class="card">
             &nbsp; &nbsp; Education
             <button class="button" id="education" onclick="dropDownHandler('education')">
@@ -67,9 +81,7 @@
            
             </span>
         </div>
-    </section>
-
-    <section id="Experience_section">
+        <section class="sections" id=" Experience_section"></section>
         <div class="card">
             &nbsp; &nbsp; Experience
             <button class="button" id="experience" onclick="dropDownHandler('experience')">
@@ -80,25 +92,13 @@
                 <!-- Content will be loaded here -->
             </span>
         </div>
-    </section>
+    <!-- </section> -->
     </div>
 
     <script src="scripts.js"></script>
 
     <script src="footer.html"></script>
-    <script>
-        document.getElementById('AboutMe').addEventListener('click', function() {
-            var targetSection = document.getElementById('targetSection');
-            var pageHeight = document.body.scrollHeight;
-            var targetPercentage = 0.35;
-
-            // Calculate the scroll position based on the percentage
-            var scrollPosition = (pageHeight - window.innerHeight) * targetPercentage;
-            window.scrollTo({
-                top: scrollPosition,
-                behavior: 'smooth'
-            });
-        });
+    
     </script>
 </body>
 </html>
