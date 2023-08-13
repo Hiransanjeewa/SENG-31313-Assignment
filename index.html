@@ -5,8 +5,23 @@
         </title>
         <!-- <script src="portfolio.js"></script> -->
         <link rel="stylesheet" href="portfolio.css"> 
+        <link rel="stylesheet" href="body.css"> 
+
         
         <!-- <script src="jquery.js"></script>  -->
+        <style>
+
+@media screen and (max-width: 768px) {
+    .portfolio-container {
+        flex-direction: column;
+    }
+
+    .profile-image {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+        </style>
 
          
     </head>
@@ -14,7 +29,12 @@
         <script src="header.js"></script>
 
        
+      
 
+        <div class="portfolio-container">
+            <img class="profile-image" src="./icons/my_profile_image.jpg" alt="Your Name">
+            <div class="name">I am Hiran Sanjeewa</div>
+        </div>
 
 
         <script src="footer.html"></script>
