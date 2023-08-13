@@ -6,7 +6,7 @@ body {
 }
 
 .portfolio-container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 20px;
     display: flex;
@@ -20,15 +20,27 @@ body {
 }
 
 .profile-image {
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
     border-radius: 50%;
     margin-right: 10px;
-
+    
 }
 
 .name {
     font-size: 24px;
     font-weight: bold;
     margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio-container {
+        flex-direction: column;
+        
+    }
+
+    .profile-image {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 }
