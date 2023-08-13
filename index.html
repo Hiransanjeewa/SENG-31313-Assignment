@@ -42,6 +42,7 @@
     </div>
 
     <div class="cardsdiv">
+        <section id="targetSection" >
         <div class="card">
             &nbsp; &nbsp; About Me 
             <button class="button" id="aboutMe" onclick="dropDownHandler('aboutMe')" >
@@ -52,6 +53,7 @@
            
         </span>
         </div>
+    </section>
 
         <div class="card">
             &nbsp; &nbsp; Education
@@ -77,6 +79,30 @@
     </div>
 
     <script src="scripts.js"></script>
+
+
+
+
+   
+    <button id="scrollButton"> 
+        Select
+    </button>
+    <script>
+        document.getElementById('scrollButton').addEventListener('click', function() {
+            var targetSection = document.getElementById('targetSection');
+            var sectionRect = targetSection.getBoundingClientRect();
+            var middlePosition = sectionRect.top + sectionRect.height / 2;
+
+            // Calculate the scroll position to center the element on the page
+            var scrollPosition = middlePosition - window.innerHeight / 2;
+
+            window.scrollTo({
+                top: scrollPosition,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
 
     <script src="footer.html"></script>
 </body>
