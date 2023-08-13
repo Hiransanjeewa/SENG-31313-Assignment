@@ -50,7 +50,7 @@ body {
 .cardsdiv{
     max-width: 1000px;
     margin: 0 auto;
-    color: aliceblue;
+
     font-size: 30px;
 } 
 .button{
@@ -61,7 +61,7 @@ body {
 .content{
     width: auto;
     color: black;
-    background-color: bisque;
+
    
 }
 
