@@ -1,43 +1,5 @@
 
-
-// function dropDownHandler(buttonID) {
-//     const favButton = document.getElementById(buttonID);
-//     const icon = favButton.querySelector('i');
-
-//         if (icon.classList.contains('fa-plus')) {
-//             icon.classList.remove('fa-plus');
-//             icon.classList.add('fa-minus');
-
-//         // adding collapse features
-             
-//         } else {
-//             icon.classList.remove('fa-minus');
-//             icon.classList.add('fa-plus');
-//         }
-
-//         const cardContents = document.getElementById(favButton.id+'-Contents');
-    
-//         favButton.addEventListener('click', function() {
-//             cardContents.classList.toggle('active');
-//             if (cardContents.style.display===' '  ) {
-//                 console.log('asxasx')
-//             }
-//             if (cardContents.style.display === 'block' ) {
-//                 cardContents.style.display = 'none';
-//                 cardContents.innerHTML=''
-//             } else {
-//                 cardContents.style.display = 'block';
-//                 cardContents.innerHTML='<span>aaa</span>'
-//             }
-//         });
-
-
-
-
-//     };
-    
-
-
+// Function to update button icons and trigger collapses
 function dropDownHandler(buttonID) {
     const favButton = document.getElementById(buttonID);
     const icon = favButton.querySelector('i');
@@ -76,10 +38,11 @@ function dropDownHandler(buttonID) {
 
 
 
-// scrolling
+// scrolling functions
 function scrollDown(scrollButton) {
     var buttons = document.querySelectorAll('.header-button');
 
+    // closing other opened collapses
     function setClicked(clickedButton) {
         buttons.forEach(function(button) {
             if (button === clickedButton) {
@@ -88,9 +51,10 @@ function scrollDown(scrollButton) {
                 button.classList.remove('clicked');
             }
         });
-        
+
 
     document.getElementById(scrollButton+'_section').scrollIntoView();
     document.getElementById(scrollButton).click();
 
+}
 }
