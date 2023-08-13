@@ -1,79 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        /* Your existing styles */
-    </style>
-    <link rel="stylesheet" href="portfolio.css"> 
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Example</title>
 </head>
 <body>
-    <script src="header.html"></script>
-
-    <div class="portfolio-container">
-        <!-- Your profile content -->
-    </div>
-
-
-
-    <div class="portfolio-container">
-           
-        <img class="profile-image" src="./icons/my_profile_image.jpg" alt="Your Name">
-        
-
-        
-        <div class="namediv">
-            <span class="name">
-                Hello , <br>  I'm Hiran Sanjeewa 
-                <br>
-            </span>
-           
-            <span class="description">
-                Devops and Cloud Enthusiast
-            </sapn>
-         </div>
+    <button id="scrollButton">Scroll to Section</button>
     
+    <div style="height: 500px; background-color: #f2f2f2;"></div>
 
-    </div>
+    <section id="targetSection" style="background-color: #e0e0e0;">
+        <h2>Target Section</h2>
+        <p>This is the section you want to scroll to.</p>
+    </section>
 
-    <div class="cardsdiv">
-        <div class="card">
-            &nbsp; &nbsp; About Me 
-            <button class="button" id="aboutMe">
-                <i class="fa fa-plus"></i>
-            </button>
-            <hr>
-            <span class="content" id="aboutMe-Contents"> 
-        </span>
-        </div>
-
-        <div class="card">
-            &nbsp; &nbsp; Education
-            <button class="button" id="education">
-                <i class="fa fa-plus"></i>
-            </button>
-            <hr>
-            <span class="content" id="education-Contents"> 
-                <!-- Content will be loaded here -->
-            </span>
-        </div>
-
-        <div class="card">
-            &nbsp; &nbsp; Experience
-            <button class="button" id="experience">
-                <i class="fa fa-plus"></i>
-            </button>
-            <hr>
-            <span class="content" id="experience-Contents"> 
-                <!-- Content will be loaded here -->
-            </span>
-        </div>
-    </div>
-
-    <script src="test.js"></script>
-
-    <script src="footer.html"></script>
+    <script>
+        document.getElementById('scrollButton').addEventListener('click', function() {
+            var targetSection = document.getElementById('targetSection');
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
 </body>
 </html>
