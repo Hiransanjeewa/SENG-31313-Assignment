@@ -42,7 +42,6 @@
     </div>
 
     <div class="cardsdiv">
-        <section id="AboutMe" >
         <div class="card">
             &nbsp; &nbsp; About Me 
             <button class="button" id="aboutMe" onclick="dropDownHandler('aboutMe')" >
@@ -53,9 +52,7 @@
            
         </span>
         </div>
-    </section>
 
-    <section id="Education" >
         <div class="card">
             &nbsp; &nbsp; Education
             <button class="button" id="education" onclick="dropDownHandler('education')">
@@ -66,9 +63,7 @@
            
             </span>
         </div>
-    </section>
 
-    <section id="Experience" >
         <div class="card">
             &nbsp; &nbsp; Experience
             <button class="button" id="experience" onclick="dropDownHandler('experience')">
@@ -79,34 +74,9 @@
                 <!-- Content will be loaded here -->
             </span>
         </div>
-    </section>
     </div>
 
     <script src="scripts.js"></script>
-
-
-
-
-   
-    <button id="scrollButton"> 
-        Select
-    </button>
-    <script>
-        document.getElementById('scrollButton').addEventListener('click', function() {
-            var targetSection = document.getElementById('targetSection');
-            var pageHeight = document.body.scrollHeight;
-            var targetPercentage = 0.35;
-
-            // Calculate the scroll position based on the percentage
-            var scrollPosition = (pageHeight - window.innerHeight) * targetPercentage;
-
-            window.scrollTo({
-                top: scrollPosition,
-                behavior: 'smooth'
-            });
-        });
-    </script>
-
 
     <script src="footer.html"></script>
 </body>
