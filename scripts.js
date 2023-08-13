@@ -79,16 +79,7 @@ function dropDownHandler(buttonID) {
 // scrolling
 function scrollDown(scrollButton) {
   
-        var targetSection = document.getElementById('targetSection');
-        var pageHeight = document.body.scrollHeight;
-        var targetPercentage = 0.3;
-
-        // Calculate the scroll position based on the percentage
-        var scrollPosition = (pageHeight - window.innerHeight) * targetPercentage;
-
-        window.scrollTo({
-            bottom: scrollPosition,
-            behavior: 'smooth'
-        });
+    document.getElementById(scrollButton+'_section').scrollIntoView();
+    document.getElementById('aboutMe').click();
 
 }
