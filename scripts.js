@@ -78,8 +78,19 @@ function dropDownHandler(buttonID) {
 
 // scrolling
 function scrollDown(scrollButton) {
-  
+    var buttons = document.querySelectorAll('.header-button');
+
+    function setClicked(clickedButton) {
+        buttons.forEach(function(button) {
+            if (button === clickedButton) {
+                button.classList.add('clicked');
+            } else {
+                button.classList.remove('clicked');
+            }
+        });
+        
+
     document.getElementById(scrollButton+'_section').scrollIntoView();
-    document.getElementById('aboutMe').click();
+    document.getElementById(scrollButton).click();
 
 }
