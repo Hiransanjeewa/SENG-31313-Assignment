@@ -54,6 +54,7 @@ function scrollDown(scrollButton) {
 
 
     document.getElementById(scrollButton+'_section').scrollIntoView();
+    // Clicking the collapse button along with the scrolling .
     document.getElementById(scrollButton).click();
 
 }
