@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #2c2b2b;
+   
 }
 
 .portfolio-container {
@@ -44,6 +45,21 @@ body {
 }
 .name{
     display:grid;
+}
+.card{
+    height: 50px;
+    margin-top: 20px;
+}
+.cardsdiv{
+    max-width: 1000px;
+    margin: 0 auto;
+    color:aliceblue;
+    font-size: 30px;
+}
+.button{
+    height: 30px;
+    width: 33px;
+    float: right;
 }
 
 @media screen and (max-width: 768px) {
