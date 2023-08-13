@@ -77,21 +77,18 @@ function dropDownHandler(buttonID) {
 
 
 // scrolling
-
-function scrolDown(scrollButton) {
-            
-    document.getElementById(scrollButton).addEventListener('click', function() {
-        var targetSection = document.getElementById(scrollButton+'_section');
+function scrollDown(scrollButton) {
+  
+        var targetSection = document.getElementById('targetSection');
         var pageHeight = document.body.scrollHeight;
-        var targetPercentage = 0.35;
+        var targetPercentage = 0.3;
 
         // Calculate the scroll position based on the percentage
         var scrollPosition = (pageHeight - window.innerHeight) * targetPercentage;
 
         window.scrollTo({
-            top: scrollPosition,
+            bottom: scrollPosition,
             behavior: 'smooth'
         });
-    });
 
 }
