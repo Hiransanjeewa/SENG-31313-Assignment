@@ -9,16 +9,13 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<AboutMe type="text/html" data="./cards/aboutMe.html">
-    <Education type="text/html" data="./cards/Education.html">
-        <Experience type="text/html" data="./cards/Experience.html">
-
 <body>
     <script src="header.html"></script>
 
     <div class="portfolio-container">
         <!-- Your profile content -->
     </div>
+
 
 
     <div class="portfolio-container">
@@ -44,29 +41,28 @@
     <div class="cardsdiv">
         <div class="card">
             &nbsp; &nbsp; About Me 
-            <button class="button" id="aboutMe" onclick="dropDownHandler('aboutMe')" >
+            <button class="button" id="aboutMe">
                 <i class="fa fa-plus"></i>
             </button>
             <hr>
             <span class="content" id="aboutMe-Contents"> 
-           
         </span>
         </div>
 
         <div class="card">
             &nbsp; &nbsp; Education
-            <button class="button" id="education" onclick="dropDownHandler('education')">
+            <button class="button" id="education">
                 <i class="fa fa-plus"></i>
             </button>
             <hr>
             <span class="content" id="education-Contents"> 
-           
+                <!-- Content will be loaded here -->
             </span>
         </div>
 
         <div class="card">
             &nbsp; &nbsp; Experience
-            <button class="button" id="experience" onclick="dropDownHandler('experience')">
+            <button class="button" id="experience">
                 <i class="fa fa-plus"></i>
             </button>
             <hr>
@@ -76,7 +72,7 @@
         </div>
     </div>
 
-    <script src="scripts.js"></script>
+    <script src="test.js"></script>
 
     <script src="footer.html"></script>
 </body>
