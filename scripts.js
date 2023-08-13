@@ -38,8 +38,6 @@
     
 
 
-
-
 function dropDownHandler(buttonID) {
     const favButton = document.getElementById(buttonID);
     const icon = favButton.querySelector('i');
